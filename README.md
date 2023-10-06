@@ -8,4 +8,8 @@ GitHub Actions を利用してリソースパックのzipファイルを自動�
 
 `zip.py` リソースパックのzipファイルを自動で生成する。
 
-`sha1.sh` リソースパックのzipファイルのsha1コードを出力する。
+`sha1.sh` リソースパックのzipファイルのsha1のハッシュ値を出力する。
+
+リソースパックのzipファイルのコミット名にsha1のハッシュ値が表示されます。
+
+`server.properties` の `resource-pack-sha1` の項目を表示されたハッシュ値にしてください。
