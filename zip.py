@@ -6,7 +6,7 @@ import hashlib
 # -----設定部分-----start
 
 FORMAT = '%(asctime)s [%(levelname)s]:%(message)s'
-FILE_NAME = 'TORO-ResourcePack.zip'
+FILE_NAME = 'release.zip'
 ALLOW_LIST = ["pack.mcmeta", "pack.png", "LICENSE", "README.md"]
 DIRECTORY = "assets"
 
