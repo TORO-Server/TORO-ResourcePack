@@ -43,9 +43,3 @@ zipf.close()
 
 logging.info("zipファイルが生成されました")
 logging.info("ファイルの場所:\n" + os.path.abspath(FILE_NAME))
-
-
-with open(FILE_NAME, 'rb') as file:
-    logging.info('sha1:  ' + hashlib.sha1(file.read()).hexdigest())
-
-logging.info("プログラムを終了します")
