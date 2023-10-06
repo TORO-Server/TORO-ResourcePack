@@ -4,11 +4,6 @@ jobs:
   build:
     runs-on: ubuntu-latest
     steps:
-      - name: Setup Python
-        uses: actions/setup-python@v2
-        with:
-          python-version: "3.8"
-          architecture: "x64"
       - name: Checkout code
         uses: actions/checkout@v2
       - name: pull latest and remove old file from repo
@@ -18,11 +13,14 @@ jobs:
           git config pull.rebase false
           git pull
           rm -f release.zip
-      - name: Archive Release
-        uses: thedoctor0/zip-release@master
+      - name: Setup Python
+        uses: actions/setup-python@v2
         with:
-          filename: "release.zip"
-          exclusions: "*.git* /*node_modules/* .editorconfig"
+          python-version: "3.8"
+          architecture: "x64"
+
+      - name: Get Python version
+        run: python -V
       - name: push changes to remote
         run: |
           git add -A
