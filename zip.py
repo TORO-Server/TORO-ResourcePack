@@ -48,6 +48,4 @@ logging.info("ファイルの場所:\n" + os.path.abspath(FILE_NAME))
 with open(FILE_NAME, 'rb') as file:
     logging.info('sha1:  ' + hashlib.sha1(file.read()).hexdigest())
 
-input("Enterキーで、この画面を閉じます")
-
 logging.info("プログラムを終了します")
