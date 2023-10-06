@@ -12,17 +12,16 @@ jobs:
           git config --global user.email "emailhere"
           git config pull.rebase false
           git pull
-          rm -f release.zip
+          rm -f ResourcePack.zip
       - name: Setup Python
         uses: actions/setup-python@v2
         with:
           python-version: "3.8"
           architecture: "x64"
 
-      - name: Get Python version
-        run: python -V
       - name: push changes to remote
         run: |
+          python3 zip.py
           git add -A
           git commit -m "sha1: $(bash sha1.sh)"
           git push --force
