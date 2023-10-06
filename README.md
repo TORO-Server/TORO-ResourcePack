@@ -1,0 +1,2 @@
+# TORO-ResourcePack
+ TOROサーバーのリソースパック
