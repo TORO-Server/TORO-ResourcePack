@@ -10,7 +10,17 @@ GitHub Actions を利用してリソースパックのzipファイルを自動�
 
 `sha1.sh` リソースパックのzipファイルのsha1のハッシュ値を出力する。
 
-### サーバーリソースパックを変更した時
+### リソースパックのURLについて
+
+`server.properties` の `resource-pack` の項目を
+
+```url
+https://github.com/ユーザー名/リポジトリ名/blob/ブランチ名/ResourcePack.zip?raw=true
+```
+
+にしてください。
+
+### サーバーリソースパックを変更した時にすること
 
 リソースパックのzipファイルのコミットメッセージにsha1のハッシュ値が表示されます。
 
