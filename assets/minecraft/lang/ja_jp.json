@@ -1,7 +1,7 @@
 {
-    "entity.minecraft.endermite": "\u30a8\u30f3\u30c0\u30fc\u30de\u30a4\u30c8",
-    "item.minecraft.endermite_spawn_egg": "\u30cf\u30e0\u30b9\u30bf\u30fc\u306e\u30b9\u30dd\u30fc\u30f3\u30a8\u30c3\u30b0",
-    "subtitles.entity.endermite.ambient": "\u30cf\u30e0\u30b9\u30bf\u30fc\u304c\u9cf4\u304f",
-    "subtitles.entity.endermite.death": "\u30cf\u30e0\u30b9\u30bf\u30fc\u304c\u6b7b\u306c",
-    "subtitles.entity.endermite.hurt": "\u30cf\u30e0\u30b9\u30bf\u30fc\u304c\u30c0\u30e1\u30fc\u30b8\u3092\u53d7\u3051\u308b"
+    "entity.minecraft.endermite": "エンダーマイト",
+    "item.minecraft.endermite_spawn_egg": "ハムスターのスポーンエッグ",
+    "subtitles.entity.endermite.ambient": "ハムスターが鳴く",
+    "subtitles.entity.endermite.death": "ハムスターが死ぬ",
+    "subtitles.entity.endermite.hurt": "ハムスターがダメージを受ける"
 }
