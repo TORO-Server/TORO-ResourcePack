@@ -1,7 +1,7 @@
 name: Create Archive
 on: 
   schedule:
-    - cron: '0 19 * * *'
+    - cron: "0 19 * * *"
 jobs:
   build:
     runs-on: ubuntu-latest
