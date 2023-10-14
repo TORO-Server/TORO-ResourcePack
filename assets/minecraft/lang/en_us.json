@@ -1,7 +1,8 @@
 {
-  "item.minecraft.endermite_spawn_egg": "Hamster Spawn Egg",
-  "entity.minecraft.endermite": "Hamster",
-  "subtitles.entity.endermite.ambient": "Hamster scuttles",
-  "subtitles.entity.endermite.death": "Hamster dies",
-  "subtitles.entity.endermite.hurt": "Hamster hurts"
+    "item.minecraft.endermite_spawn_egg": "Hamster Spawn Egg",
+    "entity.minecraft.endermite": "Hamster",
+    "subtitles.entity.endermite.ambient": "Hamster scuttles",
+    "subtitles.entity.endermite.death": "Hamster dies",
+    "subtitles.entity.endermite.hurt": "Hamster hurts",
+    "biome.usj.unko": "USJ UNKO!!"
 }
