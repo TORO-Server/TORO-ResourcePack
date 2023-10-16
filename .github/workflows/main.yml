@@ -26,5 +26,5 @@ jobs:
         run: |
           sha1=$(python3 zip.py)
           git add -A
-          git commit -m "$sha1" || exit 1
+          git commit -m "$sha1" || exit 0
           git push --force
