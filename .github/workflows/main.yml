@@ -1,4 +1,4 @@
-name: Create Archive
+name: Create ResourcePack
 on:
   push:
   schedule:
