@@ -13,7 +13,15 @@ DIRECTORY = "assets"
 
 
 def write(ziph: zipfile.ZipFile, root: str, file: str):
-    ziph.write(os.path.join(root, file))
+    # ファイルへのフルパスを生成
+    file_path = os.path.join(root, file)
+    # ZipInfoオブジェクトを作成
+    zip_info = zipfile.ZipInfo.from_file(file_path)
+    # 拡張フィールドを削除
+    zip_info.extra = b''
+    # ファイルをzipに追加
+    with open(file_path, 'rb') as f:
+        ziph.writestr(zip_info, f.read())
 
 
 def zipdir(path: str, ziph: zipfile.ZipFile):
