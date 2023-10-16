@@ -23,7 +23,12 @@ def write(ziph: zipfile.ZipFile, root: str, file: str):
 
     # ファイルをzipに追加
     with open(file_path, 'rb') as f:
-        ziph.writestr(zip_info, f.read())
+        ziph.writestr(
+            zip_info,
+            f.read(),
+            compress_type=zipfile.ZIP_DEFLATED,
+            compresslevel=9
+        )
 
 
 def zipdir(path: str, ziph: zipfile.ZipFile):
