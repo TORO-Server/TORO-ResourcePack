@@ -18,7 +18,7 @@ def write(ziph: zipfile.ZipFile, root: str, file: str):
     # ZipInfoオブジェクトを作成
     zip_info = zipfile.ZipInfo.from_file(file_path)
     # 拡張フィールドを削除
-    zip_info.extra = b''
+    zip_info.date_time = (1980, 1, 1, 0, 0, 0)
     # ファイルをzipに追加
     with open(file_path, 'rb') as f:
         ziph.writestr(zip_info, f.read())
