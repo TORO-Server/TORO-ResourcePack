@@ -1,6 +1,5 @@
 name: Create ResourcePack
 on:
-  push:
   schedule:
     - cron: "0 19 * * *"
 
