@@ -20,6 +20,7 @@ def write(ziph: zipfile.ZipFile, root: str, file: str):
 
     # 拡張フィールドを削除
     zip_info.extra = b""
+    # 時間の情報をリセット
     zip_info.date_time = (1980, 1, 1, 0, 0, 0)
 
     # ファイルをzipに追加
