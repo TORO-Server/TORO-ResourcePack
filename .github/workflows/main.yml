@@ -1,7 +1,9 @@
 name: Create Archive
 on:
+  push:
   schedule:
     - cron: "0 19 * * *"
+
 jobs:
   build:
     runs-on: ubuntu-latest
@@ -22,7 +24,7 @@ jobs:
 
       - name: push changes to remote
         run: |
-          python3 zip.py
+          sha1=$(python3 zip.py)
           git add -A
-          git commit -m "sha1: $(bash sha1.sh)"
+          git commit -m "$sha1"
           git push --force
