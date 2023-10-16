@@ -30,9 +30,11 @@ def zipdir(path: str, ziph: zipfile.ZipFile):
                         continue
 
 
+# zipファイルに圧縮
 zipf = zipfile.ZipFile(FILE_NAME, 'w', zipfile.ZIP_DEFLATED)
 zipdir('.', zipf)
 zipf.close()
 
+# リソースパックの sha1 ハッシュ値を コンソールに出力
 with open(FILE_NAME, 'rb') as file:
     print(hashlib.sha1(file.read()).hexdigest())
