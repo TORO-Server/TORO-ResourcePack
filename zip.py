@@ -1,5 +1,4 @@
 import os
-import logging
 import zipfile
 import hashlib
 
@@ -13,16 +12,11 @@ DIRECTORY = "assets"
 # -----設定部分-----end
 
 
-logging.basicConfig(format=FORMAT, level=logging.DEBUG)
-logging.info("実行開始")
-
-
-def write(ziph, root, file):
+def write(ziph: zipfile.ZipFile, root: str, file: str):
     ziph.write(os.path.join(root, file))
-    logging.info(root+"/" + file)
 
 
-def zipdir(path, ziph):
+def zipdir(path: str, ziph: zipfile.ZipFile):
     for root, dirs, files in os.walk(path):
         dir = root.encode().decode()
         if (dir.startswith(DIRECTORY, 2)):
@@ -36,10 +30,9 @@ def zipdir(path, ziph):
                         continue
 
 
-logging.info("zipファイルにしています...")
 zipf = zipfile.ZipFile(FILE_NAME, 'w', zipfile.ZIP_DEFLATED)
 zipdir('.', zipf)
 zipf.close()
 
-logging.info("zipファイルが生成されました")
-logging.info("ファイルの場所:\n" + os.path.abspath(FILE_NAME))
+with open(FILE_NAME, 'rb') as file:
+    print(hashlib.sha1(file.read()).hexdigest())
