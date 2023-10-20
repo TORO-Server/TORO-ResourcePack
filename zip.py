@@ -29,6 +29,8 @@ def writeFile(zipf: zipfile.ZipFile, file_path: str):
     zip_info.date_time = (1980, 1, 1, 0, 0, 0)
     # ファイルのアクセス権を777に設定
     zip_info.external_attr = 0o777 << 16
+    # zipファイルを作ったシステムを 0 に指定
+    zip_info.create_system = 0
 
     # ファイルをzipに追加
     with open(file_path, 'rb') as f:
