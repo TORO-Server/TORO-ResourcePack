@@ -11,17 +11,17 @@ DIRECTORY = "assets"
 # -----設定部分-----end
 
 
-def add_directory(zipf: zipfile.ZipFile, this_path: str):
-    for item in sorted(os.listdir(this_path)):
-        target_path = os.path.join(this_path, item)
+def writeDir(zipf: zipfile.ZipFile, dir_path: str):
+    for item in sorted(os.listdir(dir_path)):
+        target_path = os.path.join(dir_path, item)
 
         if os.path.isfile(target_path):
-            write(zipf, target_path)
+            writeFile(zipf, target_path)
         else:
-            add_directory(zipf, target_path)
+            writeDir(zipf, target_path)
 
 
-def write(zipf: zipfile.ZipFile, file_path: str):
+def writeFile(zipf: zipfile.ZipFile, file_path: str):
     # ZipInfoオブジェクトを作成
     zip_info = zipfile.ZipInfo.from_file(file_path)
 
@@ -44,9 +44,9 @@ def zipdir(path: str, zipf: zipfile.ZipFile):
     for target_path in sorted(os.listdir(path)):
         if os.path.isfile(target_path):
             if target_path in ALLOW_LIST:
-                write(zipf, target_path)
+                writeFile(zipf, target_path)
         elif target_path == DIRECTORY:
-            add_directory(zipf,  target_path)
+            writeDir(zipf,  target_path)
 
 
 # zipファイルに圧縮
