@@ -11,18 +11,28 @@ DIRECTORY = "assets"
 # -----設定部分-----end
 
 
-def write(ziph: zipfile.ZipFile, root: str, file: str):
-    # ファイルへのフルパスを生成
-    file_path = os.path.join(root, file)
+def add_directory(zipf: zipfile.ZipFile, this_path: str):
+    for item in sorted(os.listdir(this_path)):
+        target_path = os.path.join(this_path, item)
+
+        if os.path.isfile(target_path):
+            write(zipf, target_path)
+        else:
+            add_directory(zipf, target_path)
+
+
+def write(zipf: zipfile.ZipFile, file_path: str):
     # ZipInfoオブジェクトを作成
     zip_info = zipfile.ZipInfo.from_file(file_path)
 
     # 時間の情報をリセット
     zip_info.date_time = (1980, 1, 1, 0, 0, 0)
+    # ファイルのアクセス権を777に設定
+    zip_info.external_attr = 0o777 << 16
 
     # ファイルをzipに追加
     with open(file_path, 'rb') as f:
-        ziph.writestr(
+        zipf.writestr(
             zip_info,
             f.read(),
             compress_type=zipfile.ZIP_DEFLATED,
@@ -30,24 +40,18 @@ def write(ziph: zipfile.ZipFile, root: str, file: str):
         )
 
 
-def zipdir(path: str, ziph: zipfile.ZipFile):
-    for root, dirs, files in os.walk(path):
-        dir = root.encode().decode()
-        if (dir.startswith(DIRECTORY, 2)):
-            for file in files:
-                write(ziph, root, file)
-        elif (dir == "."):
-            for file in files:
-                for allowFile in ALLOW_LIST:
-                    if (file == allowFile):
-                        write(ziph, root, file)
-                        continue
+def zipdir(path: str, zipf: zipfile.ZipFile):
+    for target_path in sorted(os.listdir(path)):
+        if os.path.isfile(target_path):
+            if target_path in ALLOW_LIST:
+                write(zipf, target_path)
+        elif target_path == DIRECTORY:
+            add_directory(zipf,  target_path)
 
 
 # zipファイルに圧縮
-zipf = zipfile.ZipFile(FILE_NAME, 'w', zipfile.ZIP_DEFLATED)
-zipdir('.', zipf)
-zipf.close()
+with zipfile.ZipFile(FILE_NAME, 'w', zipfile.ZIP_DEFLATED) as zipf:
+    zipdir('.', zipf)
 
 # リソースパックの sha1 ハッシュ値を コンソールに出力
 with open(FILE_NAME, 'rb') as file:
