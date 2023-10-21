@@ -27,6 +27,6 @@ jobs:
       - name: push changes to remote
         run: |
           sha1=$(python3 zip.py)
-          git add -A
+          git add ResourcePack.zip
           git commit -m "$sha1" || exit 0
           git push --force
