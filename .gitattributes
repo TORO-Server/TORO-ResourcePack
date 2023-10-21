@@ -1,8 +1,10 @@
-* text=auto eol=lf
-*.{cmd,[cC][mM][dD]} text eol=crlf
-*.{bat,[bB][aA][tT]} text eol=crlf
-*.gif binary
-*.jpeg binary
-*.png binary
-*.gz binary
-*.jar binary
+# Auto detect text files and perform LF normalization
+* text=auto
+*.sh eol=lf
+*.bat eol=crlf
+
+# ResourcePack
+assets/* eol=lf
+pack.mcmeta eol=lf
+LICENSE eol=lf
+README.md eol=lf
