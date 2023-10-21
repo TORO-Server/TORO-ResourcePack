@@ -4,9 +4,9 @@ import hashlib
 
 # -----設定部分-----start
 
-FILE_NAME = 'ResourcePack.zip'
-ALLOW_LIST = ["pack.mcmeta", "pack.png", "LICENSE"]
-DIRECTORY = "assets"
+ZIP_NAME = 'ResourcePack.zip'
+ALLOW_FILE = ["pack.mcmeta", "pack.png", "LICENSE"]
+ALLOW_DIR = ["assets"]
 
 # -----設定部分-----end
 
@@ -45,16 +45,16 @@ def writeFile(zipf: zipfile.ZipFile, file_path: str):
 def zipdir(path: str, zipf: zipfile.ZipFile):
     for target_path in sorted(os.listdir(path)):
         if os.path.isfile(target_path):
-            if target_path in ALLOW_LIST:
+            if target_path in ALLOW_FILE:
                 writeFile(zipf, target_path)
-        elif target_path == DIRECTORY:
+        elif target_path in ALLOW_DIR:
             writeDir(zipf,  target_path)
 
 
 # zipファイルに圧縮
-with zipfile.ZipFile(FILE_NAME, 'w', zipfile.ZIP_DEFLATED) as zipf:
+with zipfile.ZipFile(ZIP_NAME, 'w', zipfile.ZIP_DEFLATED) as zipf:
     zipdir('.', zipf)
 
 # リソースパックの sha1 ハッシュ値を コンソールに出力
-with open(FILE_NAME, 'rb') as file:
+with open(ZIP_NAME, 'rb') as file:
     print(hashlib.sha1(file.read()).hexdigest())
