@@ -3,8 +3,6 @@ on:
   push:
     tags:
       - "v*.*.*"
-    branches:
-      - main
 
 jobs:
   build:
@@ -25,9 +23,10 @@ jobs:
       - name: Build ResourcePack
         run: |
           sha1=$(python3 zip.py)
-          echo sha1: $sha1
+          echo $sha1 > pack_sha1.txt
 
       - name: Release
         uses: softprops/action-gh-release@v1
         with:
+          body_path: pack_sha1.txt
           files: ResourcePack.zip
