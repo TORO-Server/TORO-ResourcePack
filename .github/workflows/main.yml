@@ -1,6 +1,8 @@
 name: Create ResourcePack
 on:
   push:
+    branches:
+      - main
 
 jobs:
   build:
@@ -25,6 +27,31 @@ jobs:
         run: |
           sha1=$(python3 zip.py)
           echo sha1: $sha1
-          git add -A
-          git commit -m "sha1: $sha1" || exit 0
-          git push --force
+
+      - name: Get latest release
+        id: latest_release
+        uses: actions/github-script@v4
+        with:
+          script: |
+            const { data } = await github.repos.getLatestRelease({
+              owner: context.repo.owner,
+              repo: context.repo.repo
+            });
+            return data;
+
+      - name: Get asset hash
+        id: asset_hash
+        run: |
+          curl -sLJO https://github.com/${{ github.repository }}/releases/download/${{ steps.latest_release.outputs.tag_name }}/ResourcePack.zip
+          echo ${{ hashFiles('ResourcePack.zip') }} > asset_hash
+
+      - name: Compare asset hash
+        id: compare_asset_hash
+        run: |
+          if [ "$(cat asset_hash)" == $sha1 ]; then
+            echo "Hashes do not match"
+            exit 0
+          fi
+
+      - name: Create new release
+        run:
