@@ -42,3 +42,5 @@ jobs:
 
           new_sha1=$(python3 zip.py)
           echo new_sha1: $new_sha1
+
+          sha1sum ResourcePack.zip
