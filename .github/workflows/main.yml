@@ -21,6 +21,7 @@ jobs:
         run: |
           git config --global user.name "ResourcePack-Create"
           git config --global user.email "none"
+          git config --global core.autocrlf true
           git config pull.rebase false
           git pull
 
