@@ -29,6 +29,6 @@ jobs:
         run: |
           sha1=$(python3 zip.py)
           echo sha1: $sha1
-          git add ResourcePack.zip
+          git add -A
           git commit -m "sha1: $sha1" || exit 0
           git push --force
