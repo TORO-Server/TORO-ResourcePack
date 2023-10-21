@@ -17,17 +17,6 @@ jobs:
       - name: Checkout code
         uses: actions/checkout@v4
 
-      - name: Setup Python
-        uses: actions/setup-python@v4
-        with:
-          python-version: "3.10"
-          architecture: "x64"
-
-      - name: push changes to remote
-        run: |
-          sha1=$(python3 zip.py)
-          echo sha1: $sha1
-
       - name: Get latest release
         id: latest_release
         uses: actions/github-script@v4
@@ -38,16 +27,30 @@ jobs:
               repo: context.repo.repo
             });
             return data;
-
       - name: Get asset hash
         id: asset_hash
         run: |
           curl -sLJO https://github.com/${{ github.repository }}/releases/download/${{ steps.latest_release.outputs.tag_name }}/ResourcePack.zip
-          echo ${{ hashFiles('ResourcePack.zip') }} > asset_hash
+          old_hash=${{ hashFiles('ResourcePack.zip') }}
+
+      - name: Setup Python
+        uses: actions/setup-python@v4
+        with:
+          python-version: "3.10"
+          architecture: "x64"
+
+      - name: push changes to remote
+        run: |
+          sha1=$(python3 zip.py)
+          echo sha1: $sha1
+          new_hash=${{ hashFiles('ResourcePack.zip') }}
 
       - name: Compare asset hash
         id: compare_asset_hash
         run: |
+          echo $new_hash
+          echo $old_hash
+
           if [ "$(cat asset_hash)" == $sha1 ]; then
             echo "Hashes do not match"
             exit 0
