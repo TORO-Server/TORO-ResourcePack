@@ -9,19 +9,21 @@ jobs:
     runs-on: ubuntu-latest
     steps:
       - name: Checkout code
-        uses: actions/checkout@v2
-      - name: pull latest and remove old file from repo
-        run: |
-          git config --global user.name "ResourcePack-Create"
-          git config --global user.email "none"
-          git config core.autocrlf true
-          git config pull.rebase false
-          git pull
+        uses: actions/checkout@v3
+
       - name: Setup Python
         uses: actions/setup-python@v2
         with:
           python-version: "3.8"
           architecture: "x64"
+
+      - name: pull latest from repo
+        run: |
+          git config --global user.name "ResourcePack-Create"
+          git config --global user.email "none"
+          git config --global core.autocrlf true
+          git config pull.rebase false
+          git pull
 
       - name: push changes to remote
         run: |
