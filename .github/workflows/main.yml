@@ -35,8 +35,8 @@ jobs:
       - name: Get asset hash
         id: asset_hash
         run: |
-          curl -sLJO https://github.com/${{ github.repository }}/releases/download/${{ steps.latest_release.outputs.tag_name }}/ResourcePack.zip
-          old_hash=${{ hashFiles('ResourcePack.zip') }}
+          curl -sLJo latest_release https://github.com/${{ github.repository }}/releases/download/${{ steps.latest_release.outputs.tag_name }}/ResourcePack.zip
+          old_hash=${{ hashFiles('latest_release.zip') }}
           echo $old_hash
           sha1=$(python3 zip.py)
           echo sha1: $sha1
