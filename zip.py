@@ -5,7 +5,7 @@ import hashlib
 # -----設定部分-----start
 
 FILE_NAME = 'ResourcePack.zip'
-ALLOW_LIST = ["pack.mcmeta", "pack.png", "LICENSE", "README.md"]
+ALLOW_LIST = ["pack.mcmeta", "pack.png", "LICENSE"]
 DIRECTORY = "assets"
 
 # -----設定部分-----end
