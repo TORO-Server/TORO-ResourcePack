@@ -28,5 +28,5 @@ jobs:
       - name: Release
         uses: softprops/action-gh-release@v1
         with:
-          body_path: pack_sha1.txt
+          body_path: ReleaseBody.txt
           files: ResourcePack.zip
