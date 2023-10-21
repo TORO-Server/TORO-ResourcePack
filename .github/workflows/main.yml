@@ -8,8 +8,10 @@ jobs:
   build:
     runs-on: ubuntu-latest
     steps:
+      - run: git config --global core.autocrlf true
+
       - name: Checkout code
-        uses: actions/checkout@v3
+        uses: actions/checkout@v4
 
       - name: Setup Python
         uses: actions/setup-python@v4
@@ -21,7 +23,6 @@ jobs:
         run: |
           git config --global user.name "ResourcePack-Create"
           git config --global user.email "none"
-          git config --global core.autocrlf true
           git config pull.rebase false
           git pull
 
