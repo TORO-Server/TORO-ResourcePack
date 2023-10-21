@@ -21,16 +21,6 @@ jobs:
         with:
           python-version: "3.10"
           architecture: "x64"
-      - name: Get latest release
-        id: latest_release
-        uses: actions/github-script@v4
-        with:
-          script: |
-            const { data } = await github.repos.getLatestRelease({
-              owner: context.repo.owner,
-              repo: context.repo.repo
-            });
-            return data;
 
       - name: Get asset hash
         id: asset_hash
