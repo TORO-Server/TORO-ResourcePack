@@ -21,7 +21,6 @@ jobs:
         with:
           python-version: "3.10"
           architecture: "x64"
-
       - name: Get latest release
         id: latest_release
         uses: actions/github-script@v4
@@ -32,22 +31,14 @@ jobs:
               repo: context.repo.repo
             });
             return data;
+
       - name: Get asset hash
         id: asset_hash
         run: |
           curl -sLJO https://github.com/${{ github.repository }}/releases/download/${{ steps.latest_release.outputs.tag_name }}/ResourcePack.zip
           old_hash=${{ hashFiles('ResourcePack.zip') }}
+          echo $old_hash
           sha1=$(python3 zip.py)
           echo sha1: $sha1
           new_hash=${{ hashFiles('ResourcePack.zip') }}
           echo $new_hash
-          echo $old_hash
-
-      - name: Compare asset hash
-        id: compare_asset_hash
-        run: |
-
-          if [ "$(cat asset_hash)" == $sha1 ]; then
-            echo "Hashes do not match"
-            exit 0
-          fi
