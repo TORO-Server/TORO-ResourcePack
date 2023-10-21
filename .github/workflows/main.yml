@@ -52,6 +52,3 @@ jobs:
             echo "Hashes do not match"
             exit 0
           fi
-
-      - name: Create new release
-        run:
