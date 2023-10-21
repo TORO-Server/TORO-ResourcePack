@@ -23,7 +23,7 @@ jobs:
       - name: Build ResourcePack
         run: |
           sha1=$(python3 zip.py)
-          echo sha1: $sha1 > pack_sha1.txt
+          echo "sha1: $sha1" | tee -a ReleaseBody.txt
 
       - name: Release
         uses: softprops/action-gh-release@v1
