@@ -1,0 +1,398 @@
+{
+    "custom.e_button": {
+        "category": "master",
+        "sounds": [
+            "custom/button"
+        ]
+    },
+    "custom.fumikiri01": {
+        "category": "master",
+        "sounds": [
+            "custom/fumikiri1"
+        ]
+    },
+    "custom.fumikiri02": {
+        "category": "master",
+        "sounds": [
+            "custom/fumikiri2"
+        ]
+    },
+    "custom.pat007": {
+        "category": "master",
+        "sounds": [
+            "custom/pat007"
+        ]
+    },
+    "custom.pat008": {
+        "category": "master",
+        "sounds": [
+            "custom/pat008"
+        ]
+    },
+    "custom.pat009": {
+        "category": "master",
+        "sounds": [
+            "custom/pat009"
+        ]
+    },
+    "custom.pat010": {
+        "category": "master",
+        "sounds": [
+            "custom/pat010"
+        ]
+    },
+    "custom.pat011": {
+        "category": "master",
+        "sounds": [
+            "custom/pat011"
+        ]
+    },
+    "custom.pat012": {
+        "category": "master",
+        "sounds": [
+            "custom/pat012"
+        ]
+    },
+    "custom.pat013": {
+        "category": "master",
+        "sounds": [
+            "custom/pat013"
+        ]
+    },
+    "custom.pat014": {
+        "category": "master",
+        "sounds": [
+            "custom/pat014"
+        ]
+    },
+    "custom.pat015": {
+        "category": "master",
+        "sounds": [
+            "custom/pat015"
+        ]
+    },
+    "custom.pat016": {
+        "category": "master",
+        "sounds": [
+            "custom/pat016"
+        ]
+    },
+    "custom.pat017": {
+        "category": "master",
+        "sounds": [
+            "custom/pat017"
+        ]
+    },
+    "custom.pat018": {
+        "category": "master",
+        "sounds": [
+            "custom/pat018"
+        ]
+    },
+    "custom.pat019": {
+        "category": "master",
+        "sounds": [
+            "custom/pat019"
+        ]
+    },
+    "custom.pat020": {
+        "category": "master",
+        "sounds": [
+            "custom/pat020"
+        ]
+    },
+    "custom.pat021": {
+        "category": "master",
+        "sounds": [
+            "custom/pat021"
+        ]
+    },
+    "custom.pat022": {
+        "category": "master",
+        "sounds": [
+            "custom/pat022"
+        ]
+    },
+    "custom.pat023": {
+        "category": "master",
+        "sounds": [
+            "custom/pat023"
+        ]
+    },
+    "custom.pat024": {
+        "category": "master",
+        "sounds": [
+            "custom/pat024"
+        ]
+    },
+    "custom.pat025": {
+        "category": "master",
+        "sounds": [
+            "custom/pat025"
+        ]
+    },
+    "custom.pat026": {
+        "category": "master",
+        "sounds": [
+            "custom/pat026"
+        ]
+    },
+    "custom.pat027": {
+        "category": "master",
+        "sounds": [
+            "custom/pat027"
+        ]
+    },
+    "custom.pat028": {
+        "category": "master",
+        "sounds": [
+            "custom/pat028"
+        ]
+    },
+    "custom.pat029": {
+        "category": "master",
+        "sounds": [
+            "custom/pat029"
+        ]
+    },
+    "custom.pat030": {
+        "category": "master",
+        "sounds": [
+            "custom/pat030"
+        ]
+    },
+    "custom.pat031": {
+        "category": "master",
+        "sounds": [
+            "custom/pat031"
+        ]
+    },
+    "custom.pat032": {
+        "category": "master",
+        "sounds": [
+            "custom/pat032"
+        ]
+    },
+    "custom.pat033": {
+        "category": "master",
+        "sounds": [
+            "custom/pat033"
+        ]
+    },
+    "custom.pat034": {
+        "category": "master",
+        "sounds": [
+            "custom/pat034"
+        ]
+    },
+    "custom.pat035": {
+        "category": "master",
+        "sounds": [
+            "custom/pat035"
+        ]
+    },
+    "custom.pat036": {
+        "category": "master",
+        "sounds": [
+            "custom/pat036"
+        ]
+    },
+    "custom.pat038": {
+        "category": "master",
+        "sounds": [
+            "custom/pat038"
+        ]
+    },
+    "custom.pat039": {
+        "category": "master",
+        "sounds": [
+            "custom/pat039"
+        ]
+    },
+    "custom.seh000": {
+        "category": "master",
+        "sounds": [
+            "custom/seh000"
+        ]
+    },
+    "custom.seh001": {
+        "category": "master",
+        "sounds": [
+            "custom/seh001"
+        ]
+    },
+    "custom.seh002": {
+        "category": "master",
+        "sounds": [
+            "custom/seh002"
+        ]
+    },
+    "custom.seh003": {
+        "category": "master",
+        "sounds": [
+            "custom/seh003"
+        ]
+    },
+    "custom.seh004": {
+        "category": "master",
+        "sounds": [
+            "custom/seh004"
+        ]
+    },
+    "custom.seh005": {
+        "category": "master",
+        "sounds": [
+            "custom/seh005"
+        ]
+    },
+    "custom.seh006": {
+        "category": "master",
+        "sounds": [
+            "custom/seh006"
+        ]
+    },
+    "custom.seh007": {
+        "category": "master",
+        "sounds": [
+            "custom/seh007"
+        ]
+    },
+    "custom.seh008": {
+        "category": "master",
+        "sounds": [
+            "custom/seh008"
+        ]
+    },
+    "custom.seh009": {
+        "category": "master",
+        "sounds": [
+            "custom/seh009"
+        ]
+    },
+    "custom.seh010": {
+        "category": "master",
+        "sounds": [
+            "custom/seh010"
+        ]
+    },
+    "custom.seh011": {
+        "category": "master",
+        "sounds": [
+            "custom/seh011"
+        ]
+    },
+    "custom.seh012": {
+        "category": "master",
+        "sounds": [
+            "custom/seh012"
+        ]
+    },
+    "custom.seh013": {
+        "category": "master",
+        "sounds": [
+            "custom/seh013"
+        ]
+    },
+    "custom.seh014": {
+        "category": "master",
+        "sounds": [
+            "custom/seh014"
+        ]
+    },
+    "custom.seh015": {
+        "category": "master",
+        "sounds": [
+            "custom/seh015"
+        ]
+    },
+    "custom.seh016": {
+        "category": "master",
+        "sounds": [
+            "custom/seh016"
+        ]
+    },
+    "custom.seh017": {
+        "category": "master",
+        "sounds": [
+            "custom/seh017"
+        ]
+    },
+    "custom.joint1": {
+        "category": "master",
+        "sounds": [
+            "custom/joint1"
+        ]
+    },
+    "custom.joint2": {
+        "category": "master",
+        "sounds": [
+            "custom/joint2"
+        ]
+    },
+    "custom.toilet": {
+        "category": "master",
+        "sounds": [
+            "custom/toilet"
+        ]
+    },
+    "custom.chime01": {
+        "category": "master",
+        "sounds": [
+            "custom/chime"
+        ]
+    },
+    "custom.kaisatsu": {
+        "category": "master",
+        "sounds": [
+            "custom/kaisatsu"
+        ]
+    },
+    "custom.temple_bell": {
+        "category": "master",
+        "sounds": [
+            "custom/temple_bell"
+        ]
+    },
+    "custom.mel000": {
+        "category": "master",
+        "sounds": [
+            "custom/mel_jari"
+        ]
+    },
+    "custom.mel001": {
+        "category": "master",
+        "sounds": [
+            "custom/mel_kame"
+        ]
+    },
+    "custom.mel002": {
+        "category": "master",
+        "sounds": [
+            "custom/mel_gban"
+        ]
+    },
+    "custom.mel003": {
+        "category": "master",
+        "sounds": [
+            "custom/mel_spoi"
+        ]
+    },
+    "custom.mel004": {
+        "category": "master",
+        "sounds": [
+            "custom/mel_ori1"
+        ]
+    },
+    "custom.moudourin02": {
+        "category": "master",
+        "sounds": [
+            "custom/moudourin2"
+        ]
+    },
+    "custom.moudourin01": {
+        "category": "master",
+        "sounds": [
+            "custom/moudourin1"
+        ]
+    }
+}
