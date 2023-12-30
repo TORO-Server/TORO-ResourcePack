@@ -1,4 +1,10 @@
 {
+    "entity.endermite.hurt": {
+        "replace": true,
+        "sounds": [
+            "minuma/iku001"
+        ]
+    },
     "custom.e_button": {
         "category": "master",
         "sounds": [
