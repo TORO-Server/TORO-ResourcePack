@@ -7,11 +7,12 @@
     },
     "entity.endermite.death": {
         "replace": true,
-        "sounds": {
-            "minuma/iku001": {
-                "pitch": 0.1
+        "sounds": [
+            {
+                "name": "minuma/iku001",
+                "pitch": 0.5
             }
-        }
+        ]
     },
     "custom.e_button": {
         "category": "master",
