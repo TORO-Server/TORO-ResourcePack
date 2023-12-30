@@ -30,3 +30,6 @@ jobs:
         with:
           body_path: .github/ReleaseBody.txt
           files: ResourcePack.zip
+
+permissions:
+  contents: write
