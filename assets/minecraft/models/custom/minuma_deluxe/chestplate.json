@@ -1,6 +1,6 @@
 {
     "parent": "item/generated",
     "textures": {
-        "layer0": "item/minuma_deluxe_chestplate"
+        "layer0": "item/minuma_deluxe/chestplate"
     }
 }

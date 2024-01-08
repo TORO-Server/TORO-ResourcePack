@@ -6,12 +6,6 @@
     "overrides": [
         {
             "predicate": {
-                "trim_type": 0.00
-            },
-            "model": "custom/chainmail/helmet"
-        },
-        {
-            "predicate": {
                 "trim_type": 0.01
             },
             "model": "custom/minuma/helmet"

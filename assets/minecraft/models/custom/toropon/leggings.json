@@ -1,6 +1,6 @@
 {
     "parent": "item/generated",
     "textures": {
-        "layer0": "item/minuma/leggings"
+        "layer0": "item/toropon/leggings"
     }
 }
