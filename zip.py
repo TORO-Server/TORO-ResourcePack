@@ -4,7 +4,7 @@ import hashlib
 
 # -----設定部分-----start
 
-ZIP_NAME = 'ResourcePack.zip'
+ZIP_NAME = 'TORO-ResourcePack.zip'
 ALLOW_FILE = ["pack.mcmeta", "pack.png", "LICENSE"]
 ALLOW_DIR = ["assets"]
 
