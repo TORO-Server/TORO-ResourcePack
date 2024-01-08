@@ -14,6 +14,12 @@
             }
         ]
     },
+    "custom.minuma01": {
+        "category": "master",
+        "sounds": [
+            "minuma/iku001"
+        ]
+    },
     "custom.e_button": {
         "category": "master",
         "sounds": [
