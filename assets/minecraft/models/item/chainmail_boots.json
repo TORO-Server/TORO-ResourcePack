@@ -21,6 +21,12 @@
                 "trim_type": 0.02
             },
             "model": "custom/minuma_deluxe/boots"
+        },
+        {
+            "predicate": {
+                "trim_type": 0.03
+            },
+            "model": "custom/toropon/boots"
         }
     ]
 }

@@ -21,6 +21,12 @@
                 "trim_type": 0.02
             },
             "model": "custom/minuma_deluxe/helmet"
+        },
+        {
+            "predicate": {
+                "trim_type": 0.03
+            },
+            "model": "custom/toropon/helmet"
         }
     ]
 }
