@@ -6,7 +6,9 @@
                 "trims/models/armor/chainmail",
                 "trims/models/armor/chainmail_leggings",
                 "trims/models/armor/minuma",
-                "trims/models/armor/minuma_leggings"
+                "trims/models/armor/minuma_leggings",
+                "trims/models/armor/minuma_deluxe",
+                "trims/models/armor/minuma_deluxe_leggings"
             ],
             "palette_key": "trims/color_palettes/trim_palette",
             "permutations": {
