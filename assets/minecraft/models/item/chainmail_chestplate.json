@@ -1,0 +1,20 @@
+{
+    "parent": "item/generated",
+    "textures": {
+        "layer0": "item/chainmail_chestplate"
+    },
+    "overrides": [
+        {
+            "predicate": {
+                "trim_type": 0.00
+            },
+            "model": "custom/chainmail/chestplate"
+        },
+        {
+            "predicate": {
+                "trim_type": 0.01
+            },
+            "model": "custom/minuma/chestplate"
+        }
+    ]
+}
