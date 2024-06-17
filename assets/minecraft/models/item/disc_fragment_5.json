@@ -4,8 +4,6 @@
     "layer0": "minecraft:item/disc_fragment_5"
   },
   "overrides": [
-    {"predicate": {"custom_model_data":1}, "model": "minecraft:custom/vehicle/example"},
-    {"predicate": {"custom_model_data":1001}, "model": "minecraft:custom/card/torocard"},
-    {"predicate": {"custom_model_data":1002}, "model": "minecraft:custom/card/toropass"}
+    {"predicate": {"custom_model_data":1}, "model": "minecraft:custom/vehicle/example"}
   ]
 }
