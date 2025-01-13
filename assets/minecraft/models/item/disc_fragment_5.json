@@ -5,6 +5,7 @@
   },
   "overrides": [
     {"predicate": {"custom_model_data":1}, "model": "minecraft:custom/vehicle/example"},
-    {"predicate": {"custom_model_data":2}, "model": "minecraft:custom/vehicle/kei-track"}
+    {"predicate": {"custom_model_data":2}, "model": "minecraft:custom/vehicle/kei-track"},
+    {"predicate": {"custom_model_data":16}, "model": "minecraft:custom/vehicle/salmoncar_new"}
   ]
 }
