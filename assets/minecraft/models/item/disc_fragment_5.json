@@ -9,6 +9,8 @@
     {"predicate": {"custom_model_data":11}, "model": "minecraft:custom/vehicle/simpletruck"},
     {"predicate": {"custom_model_data":12}, "model": "minecraft:custom/vehicle/simplebus"},
     {"predicate": {"custom_model_data":16}, "model": "minecraft:custom/vehicle/salmoncar_new"},
-    {"predicate": {"custom_model_data":21}, "model": "minecraft:custom/vehicle/sedan_s13_car"}
+    {"predicate": {"custom_model_data":21}, "model": "minecraft:custom/vehicle/sedan_s13_car"},
+    {"predicate": {"custom_model_data":22}, "model": "minecraft:custom/vehicle/toilet_bike"},
+    {"predicate": {"custom_model_data":23}, "model": "minecraft:custom/vehicle/toilet_bike2"}
   ]
 }
