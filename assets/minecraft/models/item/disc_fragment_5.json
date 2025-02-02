@@ -12,6 +12,7 @@
     {"predicate": {"custom_model_data":21}, "model": "minecraft:custom/vehicle/sedan_s13_car"},
     {"predicate": {"custom_model_data":22}, "model": "minecraft:custom/vehicle/toilet_bike"},
     {"predicate": {"custom_model_data":23}, "model": "minecraft:custom/vehicle/toilet_bike2"},
-    {"predicate": {"custom_model_data":31}, "model": "minecraft:custom/vehicle/Crime320-1.1"}
+    {"predicate": {"custom_model_data":24}, "model": "minecraft:custom/vehicle/t34tankq"},
+    {"predicate": {"custom_model_data":31}, "model": "minecraft:custom/vehicle/crime320"}
   ]
 }
