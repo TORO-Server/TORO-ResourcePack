@@ -14,5 +14,6 @@
 | 22 | WoodToilet | バイク |
 | 23 | WoodToilet | バイク2 |
 | 24 | WoodToilet | T-34 Q |
+| 25 | WoodToilet | T-72 B3 |
 |||
 | 31 | Naoki | Crime320 |
