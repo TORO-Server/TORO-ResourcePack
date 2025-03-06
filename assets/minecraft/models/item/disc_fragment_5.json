@@ -17,6 +17,7 @@
     {"predicate": {"custom_model_data":26}, "model": "minecraft:custom/vehicle/rx_7fd3s_e"},
     {"predicate": {"custom_model_data":27}, "model": "minecraft:custom/vehicle/180sx_toilet_c"},
     {"predicate": {"custom_model_data":31}, "model": "minecraft:custom/vehicle/crime320"},
+    {"predicate": {"custom_model_data":41}, "model": "minecraft:custom/vehicle/kokeishi_bus"},
     {"predicate": {"custom_model_data":221}, "model":"minecraft:custom/vehicle/tetsuotaluup"}
   ]
 }
