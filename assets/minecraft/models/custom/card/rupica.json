@@ -1,14 +1,6 @@
-<<<<<<< HEAD
 {
     "parent": "item/generated",
     "textures": {
         "layer0": "item/card/rupica"
     }
-=======
-{
-    "parent": "item/generated",
-    "textures": {
-        "layer0": "item/card/rupica"
-    }
->>>>>>> 5e93f820a33a246ff4cf577e32fdd9ac889ddde0
 }
