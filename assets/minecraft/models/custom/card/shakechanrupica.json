@@ -1,6 +1,14 @@
+<<<<<<< HEAD
 {
     "parent": "item/generated",
     "textures": {
         "layer0": "item/card/shakechanrupica"
     }
+=======
+{
+    "parent": "item/generated",
+    "textures": {
+        "layer0": "item/card/shakechanrupica"
+    }
+>>>>>>> 5e93f820a33a246ff4cf577e32fdd9ac889ddde0
 }
