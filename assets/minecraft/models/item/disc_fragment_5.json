@@ -14,7 +14,10 @@
     {"predicate": {"custom_model_data":23}, "model": "minecraft:custom/vehicle/toilet_bike2"},
     {"predicate": {"custom_model_data":24}, "model": "minecraft:custom/vehicle/t34tankq"},
     {"predicate": {"custom_model_data":25}, "model": "minecraft:custom/vehicle/t72b3"},
+    {"predicate": {"custom_model_data":26}, "model": "minecraft:custom/vehicle/rx_7fd3s_e"},
+    {"predicate": {"custom_model_data":27}, "model": "minecraft:custom/vehicle/180sx_toilet_c"},
     {"predicate": {"custom_model_data":31}, "model": "minecraft:custom/vehicle/crime320"},
+    {"predicate": {"custom_model_data":41}, "model": "minecraft:custom/vehicle/kokeishi_bus"},
     {"predicate": {"custom_model_data":221}, "model":"minecraft:custom/vehicle/tetsuotaluup"}
   ]
 }
