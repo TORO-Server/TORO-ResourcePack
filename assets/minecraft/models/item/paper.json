@@ -6,6 +6,10 @@
   "overrides": [
     {"predicate": {"custom_model_data":1}, "model": "minecraft:custom/card/torocard"},
     {"predicate": {"custom_model_data":2}, "model": "minecraft:custom/card/toropass"},
-    {"predicate": {"custom_model_data":3}, "model": "minecraft:custom/card/minupass"}
+    {"predicate": {"custom_model_data":3}, "model": "minecraft:custom/card/minupass"},
+    {"predicate": {"custom_model_data":4}, "model": "minecraft:custom/card/koudanpass"},
+    {"predicate": {"custom_model_data":5}, "model": "minecraft:custom/card/rupica"},
+    {"predicate": {"custom_model_data":6}, "model": "minecraft:custom/card/shakechanrupica"},
+    {"predicate": {"custom_model_data":7}, "model": "minecraft:custom/card/tohoca"}
   ]
 }
