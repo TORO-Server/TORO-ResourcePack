@@ -11,6 +11,6 @@
     {"predicate": {"custom_model_data":5}, "model": "minecraft:custom/card/rupica"},
     {"predicate": {"custom_model_data":6}, "model": "minecraft:custom/card/shakechanrupica"},
     {"predicate": {"custom_model_data":7}, "model": "minecraft:custom/card/tohoca"},
-    {"predicate": {"custom_model_data":8}, "model": "minecraft:custom/card/counta"}
+    {"predicate": {"custom_model_data":8}, "model": "minecraft:custom/card/COUNTA_CARD"}
   ]
 }
