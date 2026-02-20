@@ -1,0 +1,68 @@
+{
+    "parent": "item/handheld",
+    "textures": {
+        "layer0": "item/iron_hoe"
+    },
+    "overrides": [
+        {
+            "predicate": {
+                "custom_model_data": 1001
+            },
+            "model": "custom/valoshot/vandal"
+        },
+        {
+            "predicate": {
+                "custom_model_data": 1002
+            },
+            "model": "custom/valoshot/spectre"
+        },
+        {
+            "predicate": {
+                "custom_model_data": 1003
+            },
+            "model": "custom/valoshot/operator"
+        },
+        {
+            "predicate": {
+                "custom_model_data": 1004
+            },
+            "model": "custom/valoshot/bucky"
+        },
+        {
+            "predicate": {
+                "custom_model_data": 1005
+            },
+            "model": "custom/valoshot/judge"
+        },
+        {
+            "predicate": {
+                "custom_model_data": 1006
+            },
+            "model": "custom/valoshot/phantom"
+        },
+        {
+            "predicate": {
+                "custom_model_data": 1007
+            },
+            "model": "custom/valoshot/guardian"
+        },
+        {
+            "predicate": {
+                "custom_model_data": 1008
+            },
+            "model": "custom/valoshot/marshal"
+        },
+        {
+            "predicate": {
+                "custom_model_data": 1009
+            },
+            "model": "custom/valoshot/ares"
+        },
+        {
+            "predicate": {
+                "custom_model_data": 1010
+            },
+            "model": "custom/valoshot/knife"
+        }
+    ]
+}
