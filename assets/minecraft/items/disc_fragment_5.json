@@ -1,0 +1,27 @@
+{
+  "model": {
+    "type": "minecraft:range_dispatch",
+    "property": "minecraft:custom_model_data",
+    "fallback": {
+      "type": "minecraft:model",
+      "model": "minecraft:item/disc_fragment_5"
+    },
+    "entries": [
+      {"threshold": 1, "model": {"type": "minecraft:model", "model": "minecraft:custom/vehicle/example"}},
+      {"threshold": 2, "model": {"type": "minecraft:model", "model": "minecraft:custom/vehicle/kei-track"}},
+      {"threshold": 11, "model": {"type": "minecraft:model", "model": "minecraft:custom/vehicle/simpletruck"}},
+      {"threshold": 12, "model": {"type": "minecraft:model", "model": "minecraft:custom/vehicle/simplebus"}},
+      {"threshold": 16, "model": {"type": "minecraft:model", "model": "minecraft:custom/vehicle/salmoncar_new"}},
+      {"threshold": 21, "model": {"type": "minecraft:model", "model": "minecraft:custom/vehicle/sedan_s13_car"}},
+      {"threshold": 22, "model": {"type": "minecraft:model", "model": "minecraft:custom/vehicle/toilet_bike"}},
+      {"threshold": 23, "model": {"type": "minecraft:model", "model": "minecraft:custom/vehicle/toilet_bike2"}},
+      {"threshold": 24, "model": {"type": "minecraft:model", "model": "minecraft:custom/vehicle/t34tankq"}},
+      {"threshold": 25, "model": {"type": "minecraft:model", "model": "minecraft:custom/vehicle/t72b3"}},
+      {"threshold": 26, "model": {"type": "minecraft:model", "model": "minecraft:custom/vehicle/rx_7fd3s_e"}},
+      {"threshold": 27, "model": {"type": "minecraft:model", "model": "minecraft:custom/vehicle/180sx_toilet_c"}},
+      {"threshold": 31, "model": {"type": "minecraft:model", "model": "minecraft:custom/vehicle/crime320"}},
+      {"threshold": 41, "model": {"type": "minecraft:model", "model": "minecraft:custom/vehicle/kokeishi_bus"}},
+      {"threshold": 221, "model": {"type": "minecraft:model", "model": "minecraft:custom/vehicle/tetsuotaluup"}}
+    ]
+  }
+}

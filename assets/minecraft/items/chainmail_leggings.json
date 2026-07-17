@@ -1,0 +1,15 @@
+{
+  "model": {
+    "type": "minecraft:select",
+    "property": "minecraft:trim_material",
+    "fallback": {
+      "type": "minecraft:model",
+      "model": "minecraft:item/chainmail_leggings"
+    },
+    "cases": [
+      {"when": "toro:minuma", "model": {"type": "minecraft:model", "model": "minecraft:custom/minuma/leggings"}},
+      {"when": "toro:minuma_deluxe", "model": {"type": "minecraft:model", "model": "minecraft:custom/minuma_deluxe/leggings"}},
+      {"when": "toro:toropon", "model": {"type": "minecraft:model", "model": "minecraft:custom/toropon/leggings"}}
+    ]
+  }
+}

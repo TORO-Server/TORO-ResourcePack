@@ -2,25 +2,5 @@
     "parent": "item/generated",
     "textures": {
         "layer0": "item/chainmail_helmet"
-    },
-    "overrides": [
-        {
-            "predicate": {
-                "trim_type": 0.01
-            },
-            "model": "custom/minuma/helmet"
-        },
-        {
-            "predicate": {
-                "trim_type": 0.02
-            },
-            "model": "custom/minuma_deluxe/helmet"
-        },
-        {
-            "predicate": {
-                "trim_type": 0.03
-            },
-            "model": "custom/toropon/helmet"
-        }
-    ]
+    }
 }

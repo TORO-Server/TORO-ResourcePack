@@ -1,0 +1,20 @@
+{
+  "model": {
+    "type": "minecraft:range_dispatch",
+    "property": "minecraft:custom_model_data",
+    "fallback": {
+      "type": "minecraft:model",
+      "model": "minecraft:item/paper"
+    },
+    "entries": [
+      {"threshold": 1, "model": {"type": "minecraft:model", "model": "minecraft:custom/card/torocard"}},
+      {"threshold": 2, "model": {"type": "minecraft:model", "model": "minecraft:custom/card/toropass"}},
+      {"threshold": 3, "model": {"type": "minecraft:model", "model": "minecraft:custom/card/minupass"}},
+      {"threshold": 4, "model": {"type": "minecraft:model", "model": "minecraft:custom/card/koudanpass"}},
+      {"threshold": 5, "model": {"type": "minecraft:model", "model": "minecraft:custom/card/rupica"}},
+      {"threshold": 6, "model": {"type": "minecraft:model", "model": "minecraft:custom/card/shakechanrupica"}},
+      {"threshold": 7, "model": {"type": "minecraft:model", "model": "minecraft:custom/card/tohoca"}},
+      {"threshold": 8, "model": {"type": "minecraft:model", "model": "minecraft:custom/card/COUNTA_CARD"}}
+    ]
+  }
+}

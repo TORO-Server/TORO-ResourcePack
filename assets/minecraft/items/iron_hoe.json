@@ -1,0 +1,22 @@
+{
+  "model": {
+    "type": "minecraft:range_dispatch",
+    "property": "minecraft:custom_model_data",
+    "fallback": {
+      "type": "minecraft:model",
+      "model": "minecraft:item/iron_hoe"
+    },
+    "entries": [
+      {"threshold": 1001, "model": {"type": "minecraft:model", "model": "minecraft:custom/valoshot/vandal"}},
+      {"threshold": 1002, "model": {"type": "minecraft:model", "model": "minecraft:custom/valoshot/spectre"}},
+      {"threshold": 1003, "model": {"type": "minecraft:model", "model": "minecraft:custom/valoshot/operator"}},
+      {"threshold": 1004, "model": {"type": "minecraft:model", "model": "minecraft:custom/valoshot/bucky"}},
+      {"threshold": 1005, "model": {"type": "minecraft:model", "model": "minecraft:custom/valoshot/judge"}},
+      {"threshold": 1006, "model": {"type": "minecraft:model", "model": "minecraft:custom/valoshot/phantom"}},
+      {"threshold": 1007, "model": {"type": "minecraft:model", "model": "minecraft:custom/valoshot/guardian"}},
+      {"threshold": 1008, "model": {"type": "minecraft:model", "model": "minecraft:custom/valoshot/marshal"}},
+      {"threshold": 1009, "model": {"type": "minecraft:model", "model": "minecraft:custom/valoshot/ares"}},
+      {"threshold": 1010, "model": {"type": "minecraft:model", "model": "minecraft:custom/valoshot/knife"}}
+    ]
+  }
+}
