@@ -14,7 +14,7 @@
       {"threshold": 5, "model": {"type": "minecraft:model", "model": "minecraft:custom/card/rupica"}},
       {"threshold": 6, "model": {"type": "minecraft:model", "model": "minecraft:custom/card/shakechanrupica"}},
       {"threshold": 7, "model": {"type": "minecraft:model", "model": "minecraft:custom/card/tohoca"}},
-      {"threshold": 8, "model": {"type": "minecraft:model", "model": "minecraft:custom/card/COUNTA_CARD"}}
+      {"threshold": 8, "model": {"type": "minecraft:model", "model": "minecraft:custom/card/counta"}}
     ]
   }
 }
