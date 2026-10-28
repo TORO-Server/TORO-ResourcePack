@@ -1,6 +1,6 @@
 {
-  "parent": "minecraft:item/spawn_egg",
-    "textures": {
-        "egg":"item/salmon_spawn_egg"
-    }
+  "parent": "minecraft:item/generated",
+  "textures": {
+    "layer0": "minecraft:item/salmon_spawn_egg"
+  }
 }

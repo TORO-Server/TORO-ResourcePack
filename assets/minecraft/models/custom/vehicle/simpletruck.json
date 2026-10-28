@@ -6,7 +6,7 @@
 		"2": "block/andesite",
 		"3": "block/black_wool",
 		"5": "block/smooth_stone",
-		"6": "block/quartz_pillar",
+		"6": "block/quartz_pillar_side",
 		"7": "block/gray_wool",
 		"particle": "block/black_stained_glass"
 	},
