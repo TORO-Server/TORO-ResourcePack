@@ -20,4 +20,4 @@
 
 ## メモ
 - これらのIDは `config.yml` 内で定義されており、変更可能。
-- リソースパックの `assets/minecraft/models/item/iron_hoe.json` 内の `predicate` 設定と一致させる必要がある。
+- リソースパックの `assets/minecraft/items/iron_hoe.json` 内の `range_dispatch` (`threshold`) の設定と一致させる必要がある。
